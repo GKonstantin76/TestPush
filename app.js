@@ -246,8 +246,10 @@ function isTokenSentToServer(currentToken) {
 function setTokenSentToServer(currentToken) {
     if (currentToken) {
         window.localStorage.setItem('sentFirebaseMessagingToken', currentToken);
+		console.log('on');
     } else {
         window.localStorage.removeItem('sentFirebaseMessagingToken');
+		console.log('off');
     }
 }
 
